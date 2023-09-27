@@ -92,6 +92,8 @@ footer{
   .skip a{
     -webkit-transition: none; /* sets to default setting */
     transition: none;        /* sets to default setting */
+    top: -40px;
+    position: absolute;
    }
 
   /*Turn off parallax*/
@@ -141,7 +143,8 @@ nav a:hover, nav a:focus {
 
 .container{
   display: grid;
-  
+  grid-gap: 15px;
+
 }
 
 img{
@@ -188,7 +191,7 @@ first div in the grid  and place it in the grid. */
   .container{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 15px;
   }
 
   .about, .clients, .method, .contact{
@@ -238,7 +241,6 @@ first div in the grid  and place it in the grid. */
   
   .text-block{
     align-items: center;
-    
     text-align: center;
     max-height: 250px;
     overflow: scroll;
@@ -258,8 +260,10 @@ first div in the grid  and place it in the grid. */
   }
 
 
+
   .about, .clients, .method-image, .contact-image{
     grid-column: 3/ span 2  ;
+
   }
   .method, .contact, .about-image,  .clients-image{
     grid-column: 2/ span 2;
